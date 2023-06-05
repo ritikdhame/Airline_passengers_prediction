@@ -43,4 +43,4 @@ To run the code, you need to execute the following steps:
 The code is commented and documented for better understanding and readability.
 
 # Results 
-![image](https://github.com/ritikdhame/Airline_passengers_prediction/assets/7029092/3d606c0b-0c46-40e1-85e8-d601638fdc1a)
+![image](https://github.com/ritikdhame/Airline_passengers_prediction/assets/7029092/b2b73381-894f-4776-9177-fa3e88222331)
