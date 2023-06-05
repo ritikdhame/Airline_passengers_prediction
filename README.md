@@ -1,6 +1,7 @@
 # Airline passengers prediction
 
-This project aims to build various LSTMmodels that can carry out forecasting on Air Passengers per month data.
+# objective 
+Carry out Time series forecating on the number of International Airline Passengers in units of 1,000 for a given year and month by using various LSTM models. 
 ![image](https://github.com/ritikdhame/Airline_passengers_prediction/assets/7029092/b539a710-d214-444b-a923-8cd476075f4f)
 
 The code consists of 3 main parts:
@@ -13,7 +14,7 @@ The code consists of 3 main parts:
 
 The code requires the following dataset from Kaggle: https://www.kaggle.com/datasets/rakannimer/air-passengers?resource=download
 
-The dataset contains :  Air Passengers per month data.
+The dataset contains :  Number of Air Passengers in units of 1,000 for a given year and month. The dataset spans from January 1949 to December 1960, covering a period of 12 years with a total of 144 observations.
 
 To run the code, you need to install the following libraries:
 
