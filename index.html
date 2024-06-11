@@ -6,7 +6,7 @@
   <title>Request Resume</title>
   <style>
     .popup {
-      display: none;
+      /*display: none;*/
       position: fixed;
       top: 50%;
       left: 50%;
@@ -17,7 +17,7 @@
       z-index: 1000;
     }
     .popup-overlay {
-      display: none;
+      /*display: none;*/
       position: fixed;
       top: 0;
       left: 0;
@@ -38,8 +38,8 @@
 <div class="popup" id="email-popup">
   <h2>Select your email service</h2>
   <div class="email-service">
-    <button onclick="openEmail('mailto:ritikdhame5@gmail.com')">Gmail</button>
-  </div>
+  <button onclick="openEmail('mailto:ritikdhame5@gmail.com?subject=Request%20for%20Resume&body=Hi%20Ritik,%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20resume.%0A%0ABest%20regards,%0A[Your%20Name]')">Gmail</button>
+</div>
   <div class="email-service">
     <button onclick="openEmail('mailto:?to=&subject=Request%20for%20Resume&body=Hi%20Ritik,%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20resume.%0A%0ABest%20regards,%0A[Your%20Name]')">Other Email</button>
   </div>
