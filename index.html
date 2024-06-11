@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Resume</title>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+    .email-service {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Email service selection popup -->
+<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup" id="email-popup">
+  <h2>Select your email service</h2>
+  <div class="email-service">
+    <button onclick="openEmail('mailto:ritikdhame5@gmail.com')">Gmail</button>
+  </div>
+  <div class="email-service">
+    <button onclick="openEmail('mailto:?to=&subject=Request%20for%20Resume&body=Hi%20Ritik,%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20resume.%0A%0ABest%20regards,%0A[Your%20Name]')">Other Email</button>
+  </div>
+  <div class="email-service">
+    <button onclick="openEmail('mailto:?to=&subject=Request%20for%20Resume&body=Hi%20Ritik,%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20resume.%0A%0ABest%20regards,%0A[Your%20Name]')">Outlook</button>
+  </div>
+  <button onclick="closePopup()">Cancel</button>
+</div>
+
+<script>
+function openPopup() {
+  document.getElementById('email-popup').style.display = 'block';
+  document.getElementById('popup-overlay').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('email-popup').style.display = 'none';
+  document.getElementById('popup-overlay').style.display = 'none';
+}
+
+function openEmail(mailtoLink) {
+  window.location.href = mailtoLink;
+  closePopup();
+}
+</script>
+
+</body>
+</html>
